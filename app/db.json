@@ -1,0 +1,85 @@
+{
+  "user": [
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "name": "admin",
+      "id": 1
+    }
+  ],
+  "dishes": [
+    {
+      "name": "a new dish 12",
+      "description": "a new souce 12",
+      "price": "41",
+      "prepareTime": "15",
+      "availableTime": "Lunch",
+      "category": "Lunch",
+      "isActive": false,
+      "id": 7
+    },
+    {
+      "name": "sdggdgdsg",
+      "description": "dsgdsgsgg",
+      "price": "4",
+      "prepareTime": "6",
+      "availableTime": "Always",
+      "category": "Dessert",
+      "isActive": true,
+      "id": 11
+    },
+    {
+      "name": "dhfhdfhdfh",
+      "description": "dhfhdfhdhf",
+      "price": 0,
+      "prepareTime": 0,
+      "availableTime": "Weekends",
+      "category": "Dessert",
+      "isActive": false,
+      "id": 12
+    },
+    {
+      "name": "ghfhfhfgh",
+      "description": "gfhfghfghfgh",
+      "img": "https://media-cdn.tripadvisor.com/media/photo-s/17/f5/39/f7/fooood-at-the-food-department.jpg",
+      "price": "7",
+      "prepareTime": "8",
+      "availableTime": "Dinner",
+      "category": "Main Course",
+      "isActive": false,
+      "id": 13
+    },
+    {
+      "name": "tgfjfgfgj",
+      "description": "fgjfgjfjg",
+      "price": "9",
+      "prepareTime": "11",
+      "availableTime": "Lunch",
+      "category": "Lunch",
+      "isActive": false,
+      "id": 15
+    },
+    {
+      "name": "new dish 1111",
+      "description": "new dish 1111",
+      "img": "https://media-cdn.tripadvisor.com/media/photo-s/17/f5/39/f7/fooood-at-the-food-department.jpg",
+      "price": "19",
+      "prepareTime": "6",
+      "availableTime": "Always",
+      "category": "Beverage",
+      "isActive": true,
+      "id": 16
+    },
+    {
+      "name": "gsgdsgds",
+      "description": "sdgdsgdsgds",
+      "img": "https://media-cdn.tripadvisor.com/media/photo-s/17/f5/39/f7/fooood-at-the-food-department.jpg",
+      "price": "4",
+      "prepareTime": "2",
+      "availableTime": "Breakfast",
+      "category": "Starter",
+      "isActive": true,
+      "id": 17
+    }
+  ]
+}

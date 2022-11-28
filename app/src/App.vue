@@ -1,23 +1,33 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-main>
-      <router-link to="/" >Home</router-link> |
-      <router-link to="/itemForm" >Form</router-link> |
-      <router-link to="/dishes" >Card</router-link> 
-     <router-view></router-view>
+      <Header />
+      <router-view />
+      <Footer/>
     </v-main>
   </v-app>
 </template>
-
 <script>
-
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 export default {
   name: 'App',
+  components: {
+    Header,
+    Footer,
+  },
+}
 
-  
 
-  data: () => ({
-    //
-  }),
-};
 </script>
+
+<style>
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+
+
+</style>

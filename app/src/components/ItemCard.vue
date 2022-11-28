@@ -9,7 +9,7 @@
                     <v-card-title v-text="dish.name"></v-card-title>
                     <v-card-subtitle v-text="dish.category"></v-card-subtitle>
                     <v-card-actions>
-                        <router-link :to="{ name: 'DishDetails', params: { dish } }">
+                        <router-link :to="`/dishes/` + dish.id">
                             <v-btn color="orange lighten-2" text>
                                 Explore
                             </v-btn>
@@ -35,7 +35,9 @@
 <script>
 import axios from 'axios';
 export default {
-
+    props: {
+        params: Object
+    },
     name: 'ItemCard',
     data: () => ({
         show: false,
@@ -67,12 +69,12 @@ export default {
         },
         async getDishes() {
             await axios
-            .get("http://localhost:5000/dishes")
+            .get("http://localhost:3000/dishes")
             .then((response) => {
                 //this.products = response.data.products;
                 let oldArray = [...this.dishes]
-                console.log(response.data.data)
-                this.dishes = oldArray.concat(JSON.parse(JSON.stringify(response.data.data)))
+                console.log(response.data)
+                this.dishes = oldArray.concat(JSON.parse(JSON.stringify(response.data)))
                 console.log("dishes", this.dishes)
             })
             .catch((error => console.log(error)))
