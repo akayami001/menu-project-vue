@@ -1,12 +1,10 @@
 {
- 
-  
   "name": "api",
   "description": "Basic Server",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -14,7 +12,9 @@
     "express": "^4.17.1",
     "uuidv4": "^6.2.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
   "author": "",
   "license": "ISC"
 }
